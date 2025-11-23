@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/* ===========================================
+   SHADCN THEME TOKENS
+=========================================== */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+  }
+
+  /* ===========================================
+     GLOBAL BACKGROUND (smooth Base44 style)
+  =========================================== */
+  body {
+    background: linear-gradient(
+      180deg,
+      rgba(48, 25, 72, 0.9) 0%,
+      rgba(22, 16, 56, 1) 45%,
+      rgba(12, 14, 28, 1) 100%
+    );
+    color: rgb(var(--foreground));
+  }
+}
+
+/* ===========================================
+   HERO GLOW BACKGROUND (soft smooth)
+=========================================== */
+.hero-bg {
+  background: radial-gradient(
+    circle at 30% 20%,
+    rgba(120, 90, 200, 0.20),
+    rgba(20, 20, 60, 1) 75%
+  );
+}
+
+/* Slightly smooth transitions */
+* {
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease;
+}
